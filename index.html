@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+
+		<title>Vistex App</title>
+
+		<script
+			id="sap-ui-bootstrap"
+			src="https://sapui5.netweaver.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-libs="sap.m, sap.ui.layout, sap.makit, sap.viz, sap.ui.table, sap.ui.commons, sap.ui.core"
+			data-sap-ui-xx-bindingSyntax="complex"
+			data-sap-ui-resourceroots='{
+				"vistex.bca.ui": "./"
+			}' >
+		</script>
+
+		<script>
+		window._grab = sap.ui.getCore().byId;
+		new sap.m.Shell({
+			app: new sap.ui.core.ComponentContainer({
+				name: "vistex.bca.ui"
+			})
+		}).placeAt("content");	
+		</script>
+
+	</head>
+	<body class="sapUiBody">
+	<!-- <div id="headerMenu"> -->
+	</div>
+	<div id="content"></div>
+	</body>
+</html>
